@@ -1,27 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <manifest>
-  <!-- remote -->
-  <remote name="me" fetch="https://github.com/romiyusnandar/"/>
-  <remote name="pos" fetch="https://github.com/PixelOS-Devices/" />
-  <remote name="los" fetch="https://github.com/LineageOS/" />
+  <remote name="ryudev" fetch="https://github.com/RyuDev-Projects" />
+  <remote name="romiz" fetch="https://github.com/romiyusnandar" />
+  <remote name="lineage" fetch="https://github.com/LineageOS" />
 
-  <!-- remove packages -->
-  <remove-project name="android_vendor_orion" />
-  <!-- device tree -->
-  <project path="device/xiaomi/sweet" name="android_device_xiaomi_sweet" remote="me" revision="fourteen-testing" />
-  <project path="device/xiaomi/sm6150-common" name="android_device_xiaomi_sm6150-common" remote="me" revision="fourteen-testing" />
-  <!-- vendor tree -->
-  <project path="vendor/xiaomi/sweet" name="proprietary_vendor_xiaomi_sweet" remote="me" revision="fourteen-testing" />
-  <project path="vendor/xiaomi/sm6150-common" name="proprietary_vendor_xiaomi_sm6150-common" remote="me" revision="fourteen-testing" />
-  <!-- kernel tree -->
-  <project path="kernel/xiaomi/sm6150" name="android_kernel_xiaomi_sm6150" remote="me" revision="fourteen-testing" />
-  <!-- miui camera -->
-  <project path="vendor/xiaomi/sweet-miuicamera" name="vendor_xiaomi_sweet-miuicamera" remote="pos" revision="fourteen" />
-  <!-- needed by source -->
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-21" />
-  <project path="vendor/lineage" name="android_vendor_orion" remote="me" revision="14.0" />
-  <!-- sign build -->
-  <project path="vendor/lineage-priv/keys" name="vendor_lineage-priv_keys" remote="me" revision="fourteen" />
-
+  <project path="device/sony/akari" name="device_sony_akari" remote="romiz" revision="bka" />
+  <project path="device/sony/tama-common" name="device_sony_tama-common" remote="romiz" revision="bka" />
+  <project path="kernel/sony/sdm845" name="android_kernel_sony_sdm845" remote="lineage" revision="lineage-23.0" />
+  <project path="vendor/sony/akari" name="vendor_sony_akari" remote="romiz" revision="bka" />
+  <project path="vendor/sony/tama-common" name="vendor_sony_tama-common" remote="romiz" revision="bka" />
+  <project path="hardware/sony/SonyOpenTelephony" name="hardware_sony_SonyOpenTelephony" remote="ryudev" revision="lineage-22.1" />
 </manifest>
